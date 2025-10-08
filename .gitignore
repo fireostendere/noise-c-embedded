@@ -17,3 +17,9 @@ missing
 test-driver
 .dirstamp
 ylwrap
+# These directories are intentionally removed for embedded systems
+# They contain desktop-only code and would cause compilation errors
+tests/
+tools/
+examples/
+doc/
