@@ -61,6 +61,7 @@ static int noise_handshakestate_requirements
     (NoisePatternFlags_t flags, int prefix_id, int role, int is_fallback)
 {
     int requirements = 0;
+    (void)role; /* Parameter reserved for future use */
     if (flags & NOISE_PAT_FLAG_LOCAL_STATIC) {
         requirements |= NOISE_REQ_LOCAL_REQUIRED;
     }
